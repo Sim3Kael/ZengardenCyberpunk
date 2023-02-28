@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Elementos básicos da página*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+body {
+    background-image: url("https://i.postimg.cc/L5RtWd29/CPbg1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    color: #FCEE0C;
+    font-size: 4rem;
+    transition: 0.25s;
+    font-family: 'Overpass Mono', monospace;
+    padding: 0 300px 0 110px; 
+    margin-top: 2%;
+}
+
+h1:hover, h2:hover {
+    color:#00FFD2;
+    text-shadow: 0 0 5px #00FFD2;
+    cursor: default;
+}
+
+
+
+h2 {
+    color: #FCEE0C;
+    font-size: 2rem;
+    transition: 0.25s;
+    font-family: 'Overpass Mono', monospace;
+    padding: 0 400px 0 210px;  
+    margin-bottom: 2%;
+}
+
+h3 {
+    color: #FF003C;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    text-shadow: 0px 0px 5px #FF003C;
+    font-family: 'Overpass Mono', monospace;
+}
+
+p {
+    font-size: 1em;
+    line-height: 25px;
+    text-align: justify;
+}
+
+a {
+    color: #FCEE0C;
+    transition: 0.15s;
+    font-weight: bold; 
+	text-decoration: none; 
+}
+
+a:hover {
+    color: #00FFD2;
+    text-shadow: 2px 2px 5px  #00FFD2; 
+}
+
+/* divs */
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.sidebar {
+	position: absolute; 
+	top: 0; 
+	right: 0;
+    background: #011016;
+    background: linear-gradient(180deg, #031B25 70  %, transparent 100%);
+}
+
+.summary {
+  background-color: #FF003C;
+  padding: 25px 200px 25px 200px;
+  border-radius: 10px;
+  display: flex;
+  margin: 0 300px 0 110px;
+  flex-direction:column;
+  box-shadow: 5px 5px 50px #FF003C;
+  
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+    padding: 0 300px 0 110px;  
+}
+
+.page-wrapper { 
+	margin: 0; 
+	position: relative;
+}
+
+.sidebar .wrapper { 
+    padding: 10px; 
+    margin-top: 150px; 
+    width: 200px; 
+    box-shadow: 5px 5px 10px #000;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.sidebar li {
+	line-height: 1em; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+
+}
+
+footer { 
+	text-align: center; 
+    background-color: #011016;
+    margin: 0px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .page-wrapper { 
+        margin: 0; 
+        flex-direction: column;
+    }
+    
+    footer { 
+        padding: 40px 42%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+    
+    body {
+        background-image: url("https://i.postimg.cc/d1DRy16d/Cyberpunk-Edgerunners-4-K-Ultra-HD-Mobile-Wallpaper.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    h3 {
+        color: #FF003C;
+        display: flex;
+        justify-content: center;
+        font-size: 1.25em;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        text-shadow: 0px 0px 5px #FF003C;
+        font-family: 'Overpass Mono', monospace;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 25px;
+        justify-content: center;
+    }
+    
+    .preamble, .explanation, .participation, .benefits, .requirements {
+        padding: 0;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .sidebar .wrapper { 
+        padding: 0px; 
+        margin-top: 0px; 
+        width: 0px; 
+        box-shadow: 5px 5px 10px #000;
+    }
+    .sidebar {
+        top: 0; 
+        right: 0;
+        background: #011016;
+        background: linear-gradient(180deg, #031B25 70  %, transparent 100%);
+    }
+    
+    .sidebar .wrapper { 
+        padding: 10px; 
+        margin-top: 150px; 
+        width: 200px; 
+        box-shadow: 5px 5px 10px #000;
+    }
+    
+    .sidebar ul {
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }
+    
+    .sidebar li {
+        line-height: 1em; 
+        display: flex;
+        flex-direction: row; 
+        padding-top: 5px; 
+        margin-bottom: 5px;
+    
+    }
+}
